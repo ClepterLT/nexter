@@ -145,7 +145,25 @@ body {
 
 .homes {
   grid-column: center-start / center-end;
-  background-color: #101d2c; }
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+
+.home {
+  background-color: #f9f7f6; }
+  .home__img {
+    width: 100%; }
+  .home__like {
+    width: 3rem;
+    height: 3rem;
+    fill: #c69963; }
+  .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+    height: 2rem;
+    width: 2rem;
+    fill: #c69963; }
+  .home__location p, .home__rooms p, .home__area p, .home__price p {
+    font-size: 1.6rem; }
 
 .gallery {
   grid-column: full-start / full-end;
