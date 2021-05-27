@@ -45,7 +45,7 @@
     &:link,
     &:visited {
         background-color: $color-primary;
-        padding: 1.8rem 3rem;
+        padding: 1.5rem 3rem;
 
         font-family: $font-display;
         text-decoration: none;
@@ -53,6 +53,7 @@
         text-transform: uppercase;
         font-size: 1.5rem;
         font-weight: 400;
+        text-align: center;
         cursor: pointer;
 
         transition: all .3s;
