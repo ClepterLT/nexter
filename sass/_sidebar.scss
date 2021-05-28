@@ -3,4 +3,32 @@
     grid-row: 1 /  -1;
     
     background-color: $color-primary;
+
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-column: 1 / -1;
+        grid-row: 1 /  2;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.nav-btn {
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: 2rem;
+
+    &__icon {
+        fill: $color-grey-light-1;
+        height: 100%;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 0;
+        margin-right: 2rem;
+    }
 }
